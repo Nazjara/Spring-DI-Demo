@@ -3,9 +3,9 @@ package com.nazjara.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class SetterGreetingService implements GreetingService {
 
-    private static final String HELLO_WORLD = "Hello World from GreetingServiceImpl!";
+    private static final String HELLO_WORLD = "Hello World from SetterGreetingService!";
 
     @Override
     public String sayGreeting() {

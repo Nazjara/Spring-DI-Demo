@@ -1,0 +1,14 @@
+package com.nazjara.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class GreetingServiceImpl implements GreetingService {
+
+    private static final String HELLO_GURUS = "Hello World from GreetingService!";
+
+    @Override
+    public String sayGreeting() {
+        return HELLO_GURUS;
+    }
+}

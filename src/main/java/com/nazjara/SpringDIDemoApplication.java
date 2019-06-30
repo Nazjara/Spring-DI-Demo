@@ -1,6 +1,7 @@
 package com.nazjara;
 
 import com.nazjara.controller.ConstructorInjectedController;
+import com.nazjara.controller.DefaultController;
 import com.nazjara.controller.SetterInjectedController;
 import com.nazjara.controller.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
@@ -16,6 +17,6 @@ public class SpringDIDemoApplication {
         System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
         System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
         System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+        System.out.println(ctx.getBean(DefaultController.class).sayHello());
     }
-
 }

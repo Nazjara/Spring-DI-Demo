@@ -18,5 +18,12 @@ public class SpringDIDemoApplication {
         System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
         System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
         System.out.println(ctx.getBean(DefaultController.class).sayHello());
+
+        System.out.println("-----------------------------------------------------------");
+
+        FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
+        System.out.println(fakeDataSource.getUser());
+        System.out.println(fakeDataSource.getPassword());
+        System.out.println(fakeDataSource.getUrl());
     }
 }

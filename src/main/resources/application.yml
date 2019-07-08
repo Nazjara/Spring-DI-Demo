@@ -1,0 +1,18 @@
+name: Nazar
+
+names:
+  - Name1
+  - Name2
+  - Name3
+
+pound_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: random house
+
+truth: True #true, yes, TRUE
+
+false: False #false, no, FALSE
+
+string_val: "It's string"

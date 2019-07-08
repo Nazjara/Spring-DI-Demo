@@ -1,9 +1,10 @@
 package com.nazjara;
 
+import com.nazjara.config.PropertyConfig;
 import com.nazjara.controller.ConstructorInjectedController;
 import com.nazjara.controller.DefaultController;
-import com.nazjara.controller.SetterInjectedController;
 import com.nazjara.controller.PropertyInjectedController;
+import com.nazjara.controller.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -30,5 +31,8 @@ public class SpringDIDemoApplication {
         System.out.println(fakeJmsBroker.getUser());
         System.out.println(fakeJmsBroker.getPassword());
         System.out.println(fakeJmsBroker.getUrl());
+
+        PropertyConfig config = ctx.getBean(PropertyConfig.class);
+        System.out.println(config.getCustomProperty());
     }
 }

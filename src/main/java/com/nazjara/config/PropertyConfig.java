@@ -34,6 +34,9 @@ public class PropertyConfig {
     @Value("${jms.url}")
     private String jmsUrl;
 
+    @Value("${custom.property}")
+    private String customProperty;
+
     @Bean
     public FakeDataSource fakeDataSource() {
         FakeDataSource fakeDataSource = new FakeDataSource();
@@ -59,5 +62,9 @@ public class PropertyConfig {
     @Bean
     public static PropertySourcesPlaceholderConfigurer properties() {
         return new PropertySourcesPlaceholderConfigurer();
+    }
+
+    public String getCustomProperty() {
+        return customProperty;
     }
 }
